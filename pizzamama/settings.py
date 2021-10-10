@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g24b)hxl76g_@2hxz-qv#8o)s0p2!b=uqdx-joy636f39%3poa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pizzamamadjango141.herokuapp.com']
+ALLOWED_HOSTS = ['jrpizzamamadjango141.herokuapp.com']
 
 
 # Application definition
@@ -123,6 +123,10 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 django_heroku.settings(locals())
